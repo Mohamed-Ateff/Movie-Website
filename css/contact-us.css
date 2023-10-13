@@ -1,0 +1,269 @@
+body {
+  font-family: var(--font);
+  font-size: 1rem;
+  text-align: right;
+  direction: rtl;
+  background: #303030 url(../img/bg-pm.png);
+  background-size: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.conteiner {
+  width: 83.5% !important;
+  margin: auto;
+  position: relative;
+}
+
+#conteiner2 {
+  width: 88% !important;
+  position: relative;
+  right: 1.9%;
+}
+
+.conteiner3 {
+  width: 95.1%;
+}
+
+@media (max-width:667px) {
+
+  .conteiner {
+    width: 92% !important;
+  }
+
+  #conteiner2 {
+    width: 92% !important;
+    position: relative;
+    right: 0%;
+  }
+
+  .conteiner3 {
+    width: 100% !important;
+  }
+
+}
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+
+  .conteiner {
+    width: 90% !important;
+  }
+
+  #conteiner2 {
+    width: 90% !important;
+    position: relative;
+    right: 0%;
+  }
+
+  .conteiner3 {
+    width: 100% !important;
+
+  }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .conteiner {
+    width: 95% !important;
+  }
+
+  #conteiner2 {
+    width: 95% !important;
+    position: relative;
+    right: 0%;
+  }
+
+  .conteiner3 {
+    width: 100% !important;
+  }
+
+}
+
+.login {
+  width: 100%;
+}
+
+.login .conteiner {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100%;
+}
+
+.card {
+  width: 39%;
+  padding: 55px 15px 32px 15px;
+  background: rgba(255, 255, 255, .04);
+  border-radius: 5px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.card .img-card {
+  background-color: var(--primary);
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  transform: translateX(-50%);
+}
+
+.card .img-card .iconify {
+  color: white;
+  font-size: 32px;
+}
+
+.card form {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap row;
+}
+
+.card form input {
+  position: relative;
+  outline: 0px;
+  border-radius: 50px;
+  border: none;
+  padding: 7px 35px 7px 18px;
+  margin-top: 10px;
+  background-color: #454545 !important;
+  color: whitesmoke;
+  transition: .4s ease;
+  border: 1px solid #454545;
+}
+
+.card form textarea {
+  position: relative;
+  outline: 0px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 9px 35px 7px 18px;
+  margin-top: 10px;
+  background-color: #454545 !important;
+  color: whitesmoke;
+  transition: .4s ease;
+  border: 1px solid #454545;
+}
+
+.icon-textarea {
+  transition: .4s ease;
+  color: rgb(161, 161, 161);
+  position: absolute;
+  top: 37% !important;
+  transform: translateX(-10%);
+  right: 13px;
+}
+
+.card form textarea:focus {
+  border: 1px solid whitesmoke;
+  color: white;
+}
+
+.card form input:focus {
+  border: 1px solid whitesmoke;
+  color: white;
+}
+
+.card form .iconify {
+  color: rgb(161, 161, 161);
+  position: absolute;
+  top: 65%;
+  transform: translateX(-10%);
+  right: 13px;
+}
+
+
+.card form p {
+  margin-right: 3px;
+  color: #aaa;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 14px;
+}
+
+.card form div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+
+}
+
+.card form div input {
+  width: 100%;
+  position: relative;
+}
+
+
+.w100 {
+  width: 100%;
+}
+
+.card h1 {
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.card form button {
+  width: 100%;
+  background-color: var(--primary);
+  cursor: pointer;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin-top: 23px;
+  font-weight: 500;
+  transition: .3s ease;
+  border-radius: 50px;
+}
+
+.card form button:hover {
+
+  opacity: .8;
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width:667px) {
+  .card {
+    width: 100%;
+    padding: 55px 15px 32px 15px;
+    margin-top: 125px;
+  }
+}
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+  .card {
+    width: 70%;
+    padding: 55px 15px 32px 15px;
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .card {
+    width: 70%;
+    padding: 55px 15px 32px 15px;
+    margin-top: 150px;
+  }
+}

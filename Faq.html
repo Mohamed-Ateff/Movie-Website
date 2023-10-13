@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+  <head>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/NF.css">
+    <link rel="stylesheet" href="css/Web.css">
+    <link rel="stylesheet" href="css/Faq.css">
+    <link rel="stylesheet" href="css/loading.css">
+
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title -->
+    <title>الأسئلة الشائعة</title>
+
+  </head>
+
+
+  <body onload="preloader()">
+
+
+    <div class="a" id="contnet-loading" style="--n: 5">
+      <div class="dot" style="--i: 0"></div>
+      <div class="dot" style="--i: 1"></div>
+      <div class="dot" style="--i: 2"></div>
+      <div class="dot" style="--i: 3"></div>
+      <div class="dot" style="--i: 4"></div>
+    </div>
+
+
+    <a href="#" class="to-top">
+      <span class="iconify" data-icon="entypo:triangle-up" data-inline="false"></span>
+    </a>
+
+    <div class="footer-down">
+
+
+      <!-- header -->
+      <header>
+        <div class="conteiner">
+          <nav class="navbar">
+            <label for="input-hamburger" class="hamburger "></label>
+            <div class="branding">
+              <a href="index.html" class="branding-logo"><img src="img/logo.png" alt=""></a>
+            </div>
+            <input type="checkbox" id="input-hamburger" hidden>
+            <ul class="menu">
+
+
+              <div class="close-side">
+                <a href="">
+                  <span class="iconify" data-icon="fa-solid:times" data-inline="false"></span>
+                </a>
+              </div>
+
+              <a href="New.html" class="menu-link Active-Nav" id="link-nav2">
+                <div class="loading">
+                  <div></div>
+                  <span></span>
+                  <span></span>
+                </div>
+                المضاف حديثاً
+              </a>
+
+
+              <li class="has-dropdown">
+                <a href="#" class="menu-link" id="link-nav">الأفلام
+                  <span class="iconify" data-icon="bi:caret-down-fill" data-inline="false"></span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="Tag.html" class="menu-link">جميع الافلام</a></li>
+                  <li><a href="Tag.html" class="menu-link">افلام اجنبية</a></li>
+                  <li><a href="Tag.html" class="menu-link">افلام انمي </a></li>
+                  <li><a href="oscar.html" class="menu-link">جوائز الاوسكار لهذا العام<span class="iconify" data-icon="emojione:star" data-inline="false"></span></a></li>
+                  <li><a href="Tag.html" class="menu-link">افلام مدبلجة</a></li>
+                  <li><a href="Tag.html" class="menu-link">سلاسل افلام</a></li>
+                  <li><a href="Tag.html" class="menu-link">افلام اكشن</a></li>
+                  <li><a href="Tag.html" class="menu-link">افلام انيميشن</a></li>
+                  <li><a href="Tag.html" class="menu-link">الأعلي مشاهدة</a></li>
+                  <li><a href="Tag.html" class="menu-link">المراجعات</a></li>
+                </ul>
+              </li>
+
+              <!-- <img src="img/R-logo.png" class="img-menu-mobile delet-lap " alt="" srcset=""> -->
+
+
+              <li class="has-dropdown">
+                <a href="#" class="menu-link" id="link-nav">المسلسلات
+                  <span class="iconify" data-icon="bi:caret-down-fill" data-inline="false"></span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="Tag.html" class="menu-link">جميع المسلسلات</a></li>
+                  <li><a href="Tag.html" class="menu-link">المضاف حديثاً</a></li>
+                  <li><a href="Tag.html" class="menu-link">الاعلي مشاهدة</a></li>
+                  <li><a href="Tag.html" class="menu-link">الاعلي تقييماً</a></li>
+                  <li><a href="Tag.html" class="menu-link">المسلسلات القصيرة</a></li>
+                </ul>
+              </li>
+
+
+              <li class="has-dropdown">
+                <a href="#" class="menu-link" id="link-nav">البرامج التلفزيونية
+                  <span class="iconify" data-icon="bi:caret-down-fill" data-inline="false"></span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="Tag.html" class="menu-link">المضاف حديثاً</a></li>
+                  <li><a href="Tag.html" class="menu-link">جميع البرامج</a></li>
+                  <li><a href="Tag.html" class="menu-link">احدث الحلقات</a></li>
+                  <li><a href="Tag.html" class="menu-link"> البرامج الاعلي مشاهدة</a></li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="#" class="menu-link" id="link-nav">القسم الاسيوي
+                  <span class="iconify" data-icon="bi:caret-down-fill" data-inline="false"></span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="Tag.html" class="menu-link">المضاف حديثاً</a></li>
+                  <li><a href="Tag.html" class="menu-link">جميع المسلسلات</a></li>
+                  <li><a href="Tag.html" class="menu-link">احدث الحلقات</a></li>
+                  <li><a href="Tag.html" class="menu-link"> المسلسلات الاعلي مشاهدة</a></li>
+                </ul>
+              </li>
+
+              <li class="has-dropdown">
+                <a href="#" class="menu-link" id="link-nav">الأنمي
+                  <span class="iconify" data-icon="bi:caret-down-fill" data-inline="false"></span>
+                </a>
+                <ul class="submenu">
+                  <li><a href="Tag.html" class="menu-link">المضاف حديثاً</a></li>
+                  <li><a href="Tag.html" class="menu-link">جميع الأنمي</a></li>
+                  <li><a href="Tag.html" class="menu-link">احدث الحلقات</a></li>
+                  <li><a href="Tag.html" class="menu-link"> الأنمي الاعلي مشاهدة</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+
+
+            <a href="PM.html" class="Gold-btn delet"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span>
+              <div class="delet">العضوية المميزة</div>
+            </a>
+
+
+            <div class="social-media">
+              <a href="">
+                <div class="icon-nav">
+                  <span class="iconify" data-icon="brandico:facebook" data-inline="false"></span>
+                </div>
+              </a>
+              <a href="">
+                <div class="icon-nav">
+                  <span class="iconify" data-icon="bi:twitter" data-inline="false"></span>
+                </div>
+              </a>
+              <a href="">
+                <div class="icon-nav">
+                  <span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span>
+                </div>
+              </a>
+            </div>
+
+
+          </nav>
+
+
+
+          <div class="last-nav-search-and-log">
+
+
+            <!-- star -->
+
+            <a href="" class="Gold-btn-mobile delet-lap"><span class="iconify" data-icon="ant-design:star-filled" data-inline="false"></span></a>
+
+            <!-- End star -->
+
+            <!-- search nav -->
+
+
+            <span class="video-popup">
+              <img src="img/footer-img.png" alt="">
+              <span class="close-video">
+                <span class="video-close-icon"></span>
+              </span>
+              <div class="d-flex">
+                <form action="">
+                  <input type="text" placeholder="ابحث عما تريد ...">
+                  <a href="search.html"><span class="iconify" data-icon="cil:search" data-inline="false"></span></a>
+                </form>
+              </div>
+            </span>
+
+
+            <button class="video-btn">
+              <div class="search-icon">
+                <span class="iconify" data-icon="cil:search" data-inline="false"></span>
+              </div>
+            </button>
+
+            <!-- END search nav -->
+
+
+
+            <!-- Login -->
+
+            <a href="sign.html" class="Login">
+              <div class="d-icon-log">
+                <ion-icon name="person-outline"></ion-icon>
+              </div>
+              <span class="delet"> دخول / تسجيل</span>
+            </a>
+
+
+            <!-- End Login -->
+
+          </div>
+
+        </div>
+
+
+
+
+      </header>
+
+      <!-- End Header -->
+
+      <div class="conteiner">
+        <h2 class="title-page">الأسئلة الشائعة</h2>
+      </div>
+
+
+      <!-- FAQ -->
+
+      <div class="FAQ">
+        <div class="conteiner">
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>1. وجدت فيلم متعطل او الترجمة لا تعمل ماذا افعل ؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>قدم لنا بلاغ بهذا الخصوص عن طريق زر البلاغات الموجود في صفحة كل فيلم وسيتم إصلاح الخلل في أسرع وقت .
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>2. كيف استطيع البحث عن الفيلم بواسطة الرقم ؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p> نوفر لكم خدمة البحث بواسطة الرقم وذلك لتسهيل وصولكم إلي الفيلم او الحلقة المطلوبة ويمكنك البحث عن طريق الرابط التالي :<a href=""> اضغط هنا</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>3. كيف اتابع من الموقع؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>افتح الموقع من سفاري واكتب اسم المسلسل بيطلع لك ادخل عليه، بعدها بتطلع لك المواسم اختار الموسم الي تبيه بعدها الحلقات اختار الحلقه ثم انزل للاسفل بتشوف الفيديو شغله واستمتع، في حال ظهور صفحات الاعلانات فقط اغلقها وارجع للموقع واكمل تصفح، اي اعلان يظهر اغلقه واكمل تصفح.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>4. هل يمكن تحميل الفيلم او الحلقة ؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p> نعم يمكنك تحميل اي فيلم وأي حلقة على فاصل إعلاني</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>5. ارغب في فيلم ولم اجده على موقع فاصل إعلاني ماذا افعل ؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p> لحرصنا على توفير رغباتكم قدمنا لكم خاصية طلب الافلام مباشرة عن طريق موقعنا وسيتم إضافتها الي الموقع في أسرع وقت
+
+                      يمكنك طلب فيلمك عن طريق الصفحة التالية <a href="">اضغط هنا</a> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>6. رأيت فيلم ولم يعجبني وأرغب في اخبار الاخرين بذلك، ما هي الطريقة ؟</p>
+
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>حرصا منا على الاستماع إلى رغبات المشاهدين واخذ أراءهم قدمنا لكم خاصية التقييم لكل فيلم حيث يمكنك تقييم كل فيلم وكذلك يمكنك كتابة تعليقك عن الفيلم، حيث يساعد ذلك على تسهيل أختيار الفيلم المناسب للزوار الاخرين.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>7. روابط الموقع طويلة جدا هل يمكن إختصارها ؟</p>
+
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>يمكنك نسخ الرابط المختصر ومشاركته مع الاخرين وهو موجود في صفحة كل فيلم وحلقة ومسلسل.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>8. الانترنت لدي سيئ ولا يمكنني المشاهدة بسبب انقطاع الفيلم كل فترة ما الحل ؟</p>
+
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p> الجودة في الافلام جميعها هي HD ويمكنك تغيير الجودة يدوياً، او المشغل يختار لك الجوده المتناسبه مع سرعة انترنتك.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>9. هل يمكنكم رفع الافلام على اليوتيوب؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>لا، لا نستطيع بسبب قوانين اليوتيوب</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>10. هل يوجد تطبيق للايفون او الاندرويد؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>لا، لا نملك إي تطبيقات عليهم “حالياً”.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>11. موقعكم فيه فايروسات؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>هذه اعلانات وليست فايروسات بإمكانك التأكد عن طريق برامج مضاده للفيروسات، فقط اغلق صفحة الاعلان واكمل التصفح طبيعي
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>12. الفيلم او المسلسل قد ياخذ وقت طويل حتى يفتح؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>اذا كان الفلم بطيئ فتأكد ان هنالك الكثير يتابعون الفيلم او الحلقه معك في نفس اللحظة, انتظر قليلا حتي يبدء فقط.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>13. هل يمكنني الإنضمام لطاقم عمل فاصل إعلاني ؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>بكل تأكيد نرحب دائما بكم ويمكنك زيارة الصفحة التالية لمعرفة بقية التفاصيل : <a href="">اضغط هنا</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>14. هل محتوى الموقع مترجم؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>نعم، الافلام والمسلسلات مترجمه بالكامل.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>15. موقعكم بفلوس؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>الموقع مجاني 100% فقط ازالة الاعلانات عليها رسوم ( عضويه مميزه ).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>16. ماهي مزايا العضويه المميزه؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>ازالة الاعلانات بالكامل ومزايا اخرى مستقبلاً.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>18. ماهي طرق دفع اشتراك العضويات المميزه؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>توجد طرق متعدده وهي على هذا الرابط <a href="">هنا</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>19. ماهي اسعار العضويه المميزه؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>يوجد اربعة اسعار لأربعة عرضو مختلفة :</p>
+                    <ul>
+                      <li><a href="">14 ريال – شهر
+                        </a></li>
+                      <li><a href="">35 ريال – ثلاث شهور
+                        </a></li>
+                      <li><a href="">55 ريال – ست شهور
+                        </a></li>
+                      <li><a href="">96 ريال – سنه كامله
+                        </a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-item-header">
+                <p>20. هل يوجد لديكم حسابات في مواقع التواصل الاجتماعي ؟</p>
+              </div>
+              <div class="accordion-item-body">
+                <div class="accordion-item-body-content">
+                  <div class="D-text-AnSwer">
+                    <p>بكل تأكيد نسعى دوما إلى خدمتكم في جميع مواقع التواصل الاجتماعي حيث نقدم لكم أخبار السينما والفن وبعض المعلومات عن مشاهير هوليوود كما نقدم لكم بعض التوصيات السينمائية التي نسعى أن تحوز على إعجابكم.
+                      ويمكنك من هنا زيارة حساباتنا في مواقع التواصل الاجتماعي :</p>
+                    <ul>
+                      <li><a href="">تويتر</a></li>
+                      <li><a href="">فيس بوك</a></li>
+                      <li><a href="">انستجرام</a></li>
+                      <li><a href="">سناب شات</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- END FAQ -->
+
+
+
+
+
+      <!-- footer -->
+
+      <footer>
+        <div class="conteiner">
+          <div class="right-footer">
+            <img src="img/footer-img.png" class="delet" alt="">
+            <a href="index.html">الرئيسية</a>
+            <a href="Faq.html">الأسئلة الشائعة</a>
+            <a href="contact-us.html">اتصل بنا</a>
+            <a href="">DMCA</a>
+          </div>
+          <div class="left-footer">
+            <div class="social-media2 delet DONOt-DELET-SOCIAL">
+              <a href="">
+                <div class="icon-nav">
+                  <span class="iconify" data-icon="brandico:facebook" data-inline="false"></span>
+                </div>
+              </a>
+              <a href="">
+                <div class="icon-nav">
+                  <span class="iconify" data-icon="bi:twitter" data-inline="false"></span>
+                </div>
+              </a>
+              <a href="">
+                <div class="icon-nav">
+                  <span class="iconify" data-icon="akar-icons:instagram-fill" data-inline="false"></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="Div-last-page">
+          <p class="last-page">©2016-2021 كافة الحقوق محفوظة. فاصل إعلاني.</p>
+        </div>
+      </footer>
+
+
+      <!-- End footer -->
+
+
+
+    </div>
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="js/NT.js"></script>
+    <script src="js/Tag.js"></script>
+    <script src="js/top.js"></script>
+    <script>
+      const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+
+      accordionItemHeaders.forEach(accordionItemHeader => {
+        accordionItemHeader.addEventListener("click", event => {
+
+          const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+          if (currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader !== accordionItemHeader) {
+            currentlyActiveAccordionItemHeader.classList.toggle("active");
+            currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+          }
+
+          accordionItemHeader.classList.toggle("active");
+          const accordionItemBody = accordionItemHeader.nextElementSibling;
+          if (accordionItemHeader.classList.contains("active")) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+          } else {
+            accordionItemBody.style.maxHeight = 0;
+          }
+
+        });
+      });
+
+    </script>
+
+
+  </body>
+
+</html>

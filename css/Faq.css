@@ -1,0 +1,294 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+
+body {
+  font-family: var(--font);
+  font-size: 1rem;
+  text-align: right;
+  direction: rtl;
+  background: #303030;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.conteiner {
+  width: 83.5% !important;
+  margin: auto;
+  position: relative;
+}
+
+#conteiner2 {
+  width: 88% !important;
+  position: relative;
+  right: 1.9%;
+}
+
+.conteiner3 {
+  width: 95.1%;
+}
+
+@media (max-width:667px) {
+
+  .conteiner {
+    width: 92% !important;
+  }
+
+  #conteiner2 {
+    width: 92% !important;
+    position: relative;
+    right: 0%;
+  }
+
+  .conteiner3 {
+    width: 100% !important;
+  }
+
+}
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+
+  .conteiner {
+    width: 90% !important;
+  }
+
+  #conteiner2 {
+    width: 90% !important;
+    position: relative;
+    right: 0%;
+  }
+
+  .conteiner3 {
+    width: 100% !important;
+
+  }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .conteiner {
+    width: 95% !important;
+  }
+
+  #conteiner2 {
+    width: 95% !important;
+    position: relative;
+    right: 0%;
+  }
+
+  .conteiner3 {
+    width: 100% !important;
+  }
+
+}
+
+.title-page {
+  text-align: center;
+  color: rgb(207, 207, 207);
+  margin-top: 20px;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.FAQ {
+  width: 100%;
+}
+
+.FAQ .conteiner {
+  width: 70% !important;
+  margin: auto;
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-flow: wrap row !important;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  width: 100%;
+  background-color: #ffffff0a;
+  color: rgb(138, 138, 138);
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-family: var(--font) !important;
+  display: block !important;
+  transition: .3s ease;
+}
+
+.accordion-item:hover {
+
+  background-color: #ffffff0c;
+}
+
+.accordion-item-header {
+  padding: 0.5rem 1.1rem 0.5rem 1rem;
+  min-height: 3.4rem;
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header p {
+  font-size: 17px;
+  line-height: 1.25rem;
+  font-weight: 400;
+  color: rgb(182, 182, 182);
+}
+
+.D-text-AnSwer a {
+  font-size: 16px;
+  position: relative;
+  top: 1.5px;
+  color: rgb(194, 194, 194);
+}
+
+.D-text-AnSwer {
+  background-color: #454545 !important;
+  padding: 16px 18px 16px 18px;
+  border-radius: 4px;
+  display: flex;
+  flex-flow: wrap row;
+  align-items: center;
+  border-right: 3px solid var(--primary);
+}
+
+.D-text-AnSwer li {
+  list-style: disc;
+  color: var(--primary);
+  m
+}
+
+.D-text-AnSwer ul {
+  margin-right: 17px;
+  margin-top: 4px;
+}
+
+.D-text-AnSwer p {
+  font-weight: 500;
+  width: 100%;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  position: absolute;
+  left: 1.2rem;
+  top: 45%;
+  transform: translateY(-50%);
+}
+
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 0.5rem 1rem 1rem 1rem;
+  line-height: 1.5rem;
+  transition: .3s ease;
+}
+
+@media (max-width:667px) {
+  .title-page {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    width: 100%;
+  }
+
+  .accordion-item-header p {
+    font-size: 15px !important;
+  }
+
+  .accordion-item-header {
+    padding: 0.5rem 1.1rem 0.5rem 2.5rem;
+    min-height: 3.4rem;
+  }
+
+  .D-text-AnSwer p {
+    font-size: 14px;
+  }
+
+  .FAQ .conteiner {
+    width: 92% !important;
+  }
+}
+
+@media screen and (min-width:667px) and (max-width:1023px) {
+  .title-page {
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    width: 100%;
+  }
+
+  .accordion-item-header p {
+    font-size: 15px !important;
+  }
+
+  .accordion-item-header {
+    padding: 0.5rem 1.1rem 0.5rem 2.5rem;
+    min-height: 3.4rem;
+  }
+
+  .D-text-AnSwer p {
+    font-size: 14px;
+  }
+
+  .FAQ .conteiner {
+    width: 85% !important;
+  }
+}
+
+@media screen and (min-width:1024px) and (max-width:1470px) {
+  .title-page {
+    /* margin-top: 100px; */
+    margin-bottom: 30px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion-item {
+    width: 100%;
+  }
+
+  .accordion-item-header p {
+    font-size: 15px !important;
+  }
+
+  .accordion-item-header {
+    padding: 0.5rem 1.1rem 0.5rem 2.5rem;
+    min-height: 3.4rem;
+  }
+
+  .D-text-AnSwer p {
+    font-size: 14px;
+  }
+
+  .FAQ .conteiner {
+    width: 80% !important;
+  }
+}

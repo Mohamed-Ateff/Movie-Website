@@ -1,0 +1,42 @@
+.a {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0% !important;
+  left: 0% !important;
+  right: 0% !important;
+  bottom: 0% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  z-index: 99999999999999999999999999999999999999999999999999999 !important;
+}
+
+.dot {
+  background: var(--primary);
+}
+
+.dot,
+.dot:after {
+  color: #303030;
+  display: inline-block;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  animation: a 2s calc(((var(--i) + var(--o, 0))/var(--n) - 1)*1.5s) infinite;
+}
+
+.dot:after {
+  --o: 1;
+  background: currentcolor;
+  content: '';
+}
+
+@keyframes a {
+
+  0%,
+  50% {
+    transform: scale(0);
+  }
+}
